@@ -1,0 +1,13 @@
+package com.nguyentanhuy.repository.iplm;
+
+import com.nguyentanhuy.entity.CategoryEntity;
+import com.nguyentanhuy.repository.CategoryRepositoryCustom;
+
+public class CategoryRepositoryCustomImpl implements CategoryRepositoryCustom {
+
+	public boolean update(CategoryEntity category) {
+		String sql 
+		return false;
+	}
+
+}

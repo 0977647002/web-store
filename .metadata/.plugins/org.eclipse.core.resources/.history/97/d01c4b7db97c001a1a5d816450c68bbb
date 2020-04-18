@@ -1,0 +1,12 @@
+package com.nguyentanhuy.sevice;
+
+import java.util.List;
+
+import com.nguyentanhuy.entity.CategoryEntity;
+
+public interface ICategorySevice {
+	List<CategoryEntity> findAll();
+	CategoryEntity findById(Long id);
+	boolean uppdate(CategoryEntity category);
+	boolean detele(CategoryEntity category);
+}

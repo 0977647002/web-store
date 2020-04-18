@@ -1,0 +1,22 @@
+package com.nguyentanhuy.dao;
+
+import java.util.List;
+
+import com.nguyentanhuy.entity.Category;
+
+public interface IGennericDAO {
+	// create
+	public boolean create(Category object);
+
+	// update
+	public boolean update(Category object);
+
+	// delete
+	public boolean delete(Category object);
+
+	// find by id
+	public Category findById(Long categoryId);
+
+	// load list category
+	public List<Category> getAll();
+}

@@ -1,0 +1,43 @@
+package com.nguyentanhuy.sevice.iplm;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.nguyentanhuy.entity.CategoryEntity;
+import com.nguyentanhuy.repository.CategoryRepository;
+import com.nguyentanhuy.sevice.ICategorySevice;
+
+@Service
+public class CategoryService implements ICategorySevice{
+
+	@Autowired
+	private CategoryRepository categoryRepository;
+	
+	public List<CategoryEntity> findAll() {	
+		return  categoryRepository.findAll();
+	}
+
+	public CategoryEntity findById(Long id) {
+		return categoryRepository.findOne(id);
+	}
+
+//	public void update(CategoryEntity category) {
+//		categoryRepository.update(category.getName(), category.getUrl(), 
+//				category.getStatus(), category.getId());
+//	}
+
+	public void detele(CategoryEntity category) {
+		categoryRepository.delete(category);
+	}
+
+	public void save(CategoryEntity category) {
+		categoryRepository.save(category);
+	}
+
+	public void update(CategoryEntity category) {
+		// TODO Auto-generated method stub
+		
+	}
+}

@@ -1,0 +1,25 @@
+package com.nguyentanhuy.intercepter;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
+
+import com.nguyentanhuy.dao.CategoryRepository;
+import com.nguyentanhuy.sevice.ICategorySevice;
+
+@Component
+public class WebIntercepter extends HandlerInterceptorAdapter {
+
+	@Autowired
+	private ICategorySevice categoryServiece;
+	
+	@Override
+	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
+			throws Exception {
+		request.setAttribute("category", categoryServiece.findAll());
+		return true;
+	}	
+}

@@ -1,0 +1,13 @@
+package com.nguyentanhuy.sevice;
+
+import java.util.List;
+
+import com.nguyentanhuy.entity.Product;
+
+public interface IProductService {
+	List<Product> findAll();
+	Product findById(Long id);
+	void update(Product product);
+	void detele(Product product);
+	void save(Product product);
+}

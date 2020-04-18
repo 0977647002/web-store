@@ -1,0 +1,9 @@
+package com.nguyentanhuy.sevice;
+
+import java.util.List;
+
+import com.nguyentanhuy.entity.CategoryEntity;
+
+public interface ICategorySevice {
+	List<CategoryEntity> findAll(); 
+}

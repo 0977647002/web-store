@@ -1,0 +1,5 @@
+package com.nguyentanhuy.repository;
+
+public interface CategoryRepositoryCustom {
+
+}

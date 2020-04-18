@@ -1,0 +1,23 @@
+package com.nguyentanhuy.sevice.iplm;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.nguyentanhuy.dto.CategoryDTO;
+import com.nguyentanhuy.entity.CategoryEntity;
+import com.nguyentanhuy.repository.CategoryRepository;
+import com.nguyentanhuy.sevice.ICategorySevice;
+
+@Service
+public class CategoryService implements ICategorySevice{
+
+	@Autowired
+	private CategoryRepository categoryRepository;
+	
+		return  categoryRepository.findAll();;
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.nguyentanhuy.repository;
+
+import com.nguyentanhuy.entity.CategoryEntity;
+
+public interface CategoryRepositoryCustom {
+	boolean update(CategoryEntity category);
+}

@@ -1,0 +1,26 @@
+package com.nguyentanhuy.util;
+
+import org.hibernate.HibernateException;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class HibernateUtil {
+	private static SessionFactory sessionFactory = null;
+	private static Configuration cfg = null;
+
+	public static SessionFactory getSessionFactory() {
+
+		if (sessionFactory == null) {
+			try {
+				cfg = new Configuration();
+				cfg.configure("/WEB-INF/hibernate.cfg.xml");
+				sessionFactory = cfg.buildSessionFactory();
+				return sessionFactory;
+			} catch (HibernateException e) {
+				return null;
+			}
+		} 
+		
+		return sessionFactory;
+	}
+}

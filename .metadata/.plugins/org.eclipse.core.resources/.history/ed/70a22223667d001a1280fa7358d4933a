@@ -1,0 +1,5 @@
+package com.nguyentanhuy.dao.impl;
+
+public class CategoryDAO {
+
+}

@@ -1,0 +1,89 @@
+package com.nguyentanhuy.entity;
+
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "category")
+public class CategoryEntity {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	
+	@Column(name = "name")
+	private String categoryName;
+	
+	@Column(name = "url")
+	private String categoryUrl;
+	
+	@Column(name = "status")
+	private boolean categoryStatus;
+	
+	@OneToMany(fetch = FetchType.LAZY)
+	@JoinColumn(name = "categoryId")
+	private List<ProductEntity> listProduct;
+
+	public CategoryEntity() {
+	}
+
+	public CategoryEntity(Long id, String categoryName, String categoryUrl, boolean categoryStatus,
+			List<ProductEntity> listProduct) {
+		this.id = id;
+		this.categoryName = categoryName;
+		this.categoryUrl = categoryUrl;
+		this.categoryStatus = categoryStatus;
+		this.listProduct = listProduct;
+	}
+
+	public String getCategoryName() {
+		return categoryName;
+	}
+
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
+	}
+
+	public String getCategoryUrl() {
+		return categoryUrl;
+	}
+
+	public void setCategoryUrl(String categoryUrl) {
+		this.categoryUrl = categoryUrl;
+	}
+
+	public boolean isCategoryStatus() {
+		return categoryStatus;
+	}
+
+	public void setCategoryStatus(boolean categoryStatus) {
+		this.categoryStatus = categoryStatus;
+	}
+
+	public List<ProductEntity> getListProduct() {
+		return listProduct;
+	}
+
+	public void setListProduct(List<ProductEntity> listProduct) {
+		this.listProduct = listProduct;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+	
+	
+}

@@ -1,0 +1,27 @@
+package com.nguyentanhuy.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
+
+import com.nguyentanhuy.entity.Product;
+
+@Repository
+public interface ProductRepository extends JpaRepository<Product, Long>{
+//	@Query("UPDATE Product p SET "
+//			+ "p.name = :name,"
+//			+ "p.url = :url,"
+//			+ "p.price = :price,"
+//			+ "p.sale = :sale,"
+//			+ "p.description = :description,"
+//			+ "p.status = :status "
+//			+ "WHERE p.id = :id")
+//	void update(@Param("id") Long id,
+//			@Param("name") String name,
+//			@Param("url") String url,
+//			@Param("price") double price,
+//			@Param("sale") int sale,
+//			@Param("description") String description,
+//			@Param("status") int status);
+}

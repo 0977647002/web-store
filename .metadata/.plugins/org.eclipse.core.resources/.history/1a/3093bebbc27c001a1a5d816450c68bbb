@@ -1,0 +1,9 @@
+package com.nguyentanhuy.sevice;
+
+import java.util.List;
+
+import com.nguyentanhuy.entity.ProductEntity;
+
+public interface IProductService {
+	List<ProductEntity> findAll();
+}

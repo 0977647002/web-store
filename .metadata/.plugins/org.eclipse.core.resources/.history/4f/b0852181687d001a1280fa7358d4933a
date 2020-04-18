@@ -1,0 +1,22 @@
+package com.nguyentanhuy.dao;
+
+import java.util.List;
+
+import com.nguyentanhuy.entity.Product;
+
+public interface IProductDAO {
+	// create
+		public boolean create(Product object);
+
+		// update
+		public boolean update(Product object);
+
+		// delete
+		public boolean delete(Product object);
+
+		// find by id
+		public Product findById(Long productId);
+
+		// load list category
+		public List<Product> getAll();
+}
