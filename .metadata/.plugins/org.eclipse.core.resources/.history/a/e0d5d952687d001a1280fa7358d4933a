@@ -1,5 +1,0 @@
-package com.nguyentanhuy.dao;
-
-public interface IProductDAO {
-
-}

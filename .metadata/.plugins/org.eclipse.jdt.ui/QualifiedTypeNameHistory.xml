@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.nguyentanhuy.dto.CategoryDTO"/>
-<fullyQualifiedTypeName name="com.nguyentanhuy.repository.ProductRepository"/>
-<fullyQualifiedTypeName name="java.awt.Robot"/>
-<fullyQualifiedTypeName name="org.springframework.web.servlet.handler.HandlerInterceptorAdapter"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 <fullyQualifiedTypeName name="com.nguyentanhuy.repository.CategoryRepository"/>
 <fullyQualifiedTypeName name="com.nguyentanhuy.sevice.ICategorySevice"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 <fullyQualifiedTypeName name="com.nguyentanhuy.entity.Receipt"/>
+<fullyQualifiedTypeName name="org.jsoup.nodes.Document"/>
+<fullyQualifiedTypeName name="org.jsoup.Jsoup"/>
+<fullyQualifiedTypeName name="org.jsoup.select.Elements"/>
+<fullyQualifiedTypeName name="org.jsoup.nodes.Element"/>
 </qualifiedTypeNameHistroy>
